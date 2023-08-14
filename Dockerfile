@@ -17,7 +17,7 @@ RUN cd /app && \
 RUN cd /app && \
     npm install
 
-RUN docker-php-ext-install pdo pdo_mysql
+RUN pdo pdo_mysql
 
 RUN chown -R www-data: /app
 
